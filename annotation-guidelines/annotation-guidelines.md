@@ -71,6 +71,17 @@ These are the guidelines for the annotation of olfactory references in historic 
 - In many artworks, objects are grouped together very closely with a lot of occlusion. Although it is hard to label each of these objects indidually, we currently do not have a way of handling crowd annotations. So, if possible, please try to label each instance separately. Zooming in and using the hotkeys `n` + default category can make this a little more convenient.
 
 ## Hotkeys Cheatsheet
+TBD
 
+## Specific Category Guidelines
+
+### Flower
+- We define one instance of a flower as a visible blossom. Closed buds, leafs, and stems are not considered to be part of the flower instance.
+
+### Fruit
+- Grapes: One instance of an grapes-object is not a single berry, but the whole bunch of berries
+
+### Sniffing
+- Please include the face (i.e. eyes, ears, nose) and the hand holding the object in the bounding box
 
 
