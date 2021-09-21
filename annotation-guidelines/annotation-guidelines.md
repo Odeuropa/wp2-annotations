@@ -49,7 +49,26 @@ These are the guidelines for the annotation of olfactory references in historic 
 
 ![attribute annotation](screenshots/attribute-annotation2.png)
 
+
 ## Categories
+- To limit the number of labels to choose from, the categories are ordered in a two level hierarchy where most categories contain a number of subcategories to further specify the annotation.
+- A visualization of the hierarchy is available [here](labelsystem.jpg) 
+- Apart from the predefined subcategories, each category has a generic `other` free text field where missing subcategories can be entered. 
+- Furthermore, there is a specific `other` category that is meant to capture missing categories that the annotator thinks is important. It has a `type` free text field where the name of the missing category can be entered
+- If there is something you are absolutely missing from a nose-first perspective or you think is superfluous, please let us know, either in the issues, or in the slack channel.
+
+## Best Practices
+
+### Artwork Skipping 
+- We are training the object detectors in an iterative process. In a first step, we want to train them using artworks that are as close as possible to photographic depictions. Then, in a second step, we will try to increase the level of artistic abstraction and expand our dataset to artworks that deviate more and more from photorealistic paintings. 
+- This entails that grayscale images and images with a high level of abstraction should be skipped in the first round of annotations. Please just proceed to the next image if you encounter artworks where the objects are very hard to recognize (for you, as a human annotator).
+
+### Subcategory Specification
+- In the current stage of project we are not using the subcategories of many categories (e.g. flower or bird subcategories are not used). Other subcategories such as Mammal -> Dog are already used. 
+- However, some of the subcategories may carry a lot of olfactory meaning (e.g. specific kinds of flowers), so be as specific as possible when defining the subcategory. 
+
+### Instance Annotation
+- In many artworks, objects are grouped together very closely with a lot of occlusion. Although it is hard to label each of these objects indidually, we currently do not have a way of handling crowd annotations. So, if possible, please try to label each instance separately. Zooming in and using the hotkeys `n` + default category can make this a little more convenient.
 
 ## Hotkeys Cheatsheet
 
