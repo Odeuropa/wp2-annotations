@@ -2,7 +2,7 @@
 
 
 ## Contents
-- `scripts` directory contains scripts to visualize and process annotations
+- scripts to visualize and process annotations (`scripts` directory)
 
 - [Annotation Guidelines](annotation-guidelines/annotation-guidelines.md)
 
