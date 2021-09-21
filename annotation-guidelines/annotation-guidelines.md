@@ -21,14 +21,37 @@ These are the guidelines for the annotation of olfactory references in historic 
 ![job overview](screenshots/job-overview.jpg)
 
 ### Annotation Window
-- Having selected a job, you will see the first artwork that is waiting to be annotated. Create your first box by clicking on the empty rectangle on the left (`1`) or by pushing the `n` button on the keyboard. 
+- Having selected a job, you will see the first artwork that is waiting to be annotated. 
+- You can navigate between artworks using the arrows on the top of the screen or by pushing the `f` and `n` buttons on the keyboard.
+- Create your first box by clicking on the empty rectangle on the left (`1`) or by pushing the `n` button on the keyboard. 
 - After creating the box, you can select a category for the box in the object tab on the right (`2`), by clicking on the `details` button (`3`) you can choose a subcategory. If no suitable subcategory is listed (and you think the subcategory is important as far as smell is concerned), you can enter a free text in the `other` field.
 
 ![annotation window](screenshots/annotation-mode.png)
+
+### Category Selection
+- If there are many boxes of the same category to label, selecting a default label can speed up the process a lot.
+- To do so, click on the `label` tab (`1`) on the right. 
+- There you see all available high level categories. Some of them have numbers next to them (`2`).
+- Push `ctrl + n` on the keyboard to select the category with number `n` next to it as default label for new bounding boxes, e.g. pushing `ctrl + 3` would select flower as the default label. 
+- Since there are more than 10 possible categories, some of the categories do not have a number next to them but a `?` (`3`).
+- To be able to select them as default category, a number has to be assigned first. To do so, simply click on the `?` (`3`), you can then select one number that should be replaced with the current category.
+
+![label selection](screenshots/label-selection.png)
+
+### Attribute Annotation
+- In cases where many subcategories need to be selected, the attribute annotation mode can speed up the annotation. Select the attribute annotation mode by clicking on the dropdown menu in the top right corner of the screen (`1`).
+- Now navigate through the attributes on the right until you see the `type` selection (`2`).
+
+![attribute annotation prep](screenshots/attribute-annotation1.png)
+
+- You can now conveniently select the appropriate subcategory by hitting the number key on the keyboard that is next the subcategory (`1`).
+- Navigate through the objects using the arrow buttons above (`2`) or by pushing `tab`/`shift+tab` on the keyboard.
+
+![attribute annotation](screenshots/attribute-annotation2.png)
+
 ## Categories
 
 ## Hotkeys Cheatsheet
 
-## Attribute Annotation Mode
 
 
