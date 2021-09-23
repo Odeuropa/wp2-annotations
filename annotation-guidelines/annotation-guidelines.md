@@ -14,8 +14,8 @@ These are the guidelines for the annotation of olfactory references in historic 
 ![task overview](screenshots/task-overview.jpg)
 
 ### Job Overview
-- Each tasks consists of multiple jobs, each containing 50 artworks to be annotated. Select one job by clicking on the job name (e.g. `job #2842`) to start annotating. 
 - Please mark that you are working on the job by entering your username in the `assignee` field on the right. 
+- Each tasks consists of multiple jobs, each containing 50 artworks to be annotated. Select one job by clicking on the job name (e.g. `job #2842`) to start annotating. 
 - Of course, it is possible (and encouraged) to review other users' jobs and share your thoughts on the slack channel or in the repository issues. 
 
 ![job overview](screenshots/job-overview.jpg)
@@ -25,6 +25,7 @@ These are the guidelines for the annotation of olfactory references in historic 
 - You can navigate between artworks using the arrows on the top of the screen or by pushing the `f` and `n` buttons on the keyboard.
 - Create your first box by clicking on the empty rectangle on the left (`1`) or by pushing the `n` button on the keyboard. 
 - After creating the box, you can select a category for the box in the object tab on the right (`2`), by clicking on the `details` button (`3`) you can choose a subcategory. If no suitable subcategory is listed (and you think the subcategory is important as far as smell is concerned), you can enter a free text in the `other` field.
+- For the annotations to be persisted, they must be saved using the `save` button in the top left corner, or by pushing `ctrl+s` on the keyboard. It is advisable to quicksave from time to time, so the annotations do not get lost if you accidentally close the browser.
 
 ![annotation window](screenshots/annotation-mode.png)
 
@@ -45,6 +46,7 @@ These are the guidelines for the annotation of olfactory references in historic 
 ![attribute annotation prep](screenshots/attribute-annotation1.png)
 
 - You can now conveniently select the appropriate subcategory by hitting the number key on the keyboard that is next the subcategory (`1`).
+- Unfortunately, there is no shortcut for selecting subcategories with numbers higher than 10. In these cases, the type can be chosen by selecting it with the mouse in the list below.
 - Navigate through the objects using the arrow buttons above (`2`) or by pushing `tab`/`shift+tab` on the keyboard.
 
 ![attribute annotation](screenshots/attribute-annotation2.png)
@@ -69,7 +71,8 @@ These are the guidelines for the annotation of olfactory references in historic 
 - However, some of the subcategories may carry a lot of olfactory meaning (e.g. specific kinds of flowers), so be as specific as possible when defining the subcategory. 
 
 ### Instance Annotation
-- In many artworks, objects are grouped together very closely with a lot of occlusion. Although it is hard to label each of these objects indidually, we currently do not have a way of handling crowd annotations. So, if possible, please try to label each instance separately. Zooming in and using the hotkeys `n` + default category can make this a little more convenient.
+- In many artworks, objects are grouped together very closely with a lot of occlusion. Although it is hard to label each of these objects indidually, we currently do not have a way of handling crowd annotations. So, if possible, please try to label each instance separately. Zooming in and using the hotkeys `n` + default category can make this a little more convenient. 
+- For cases where instance labeling is not possible, added the is_crowd attribute (based on the [coco iscrowd attribute](https://towardsdatascience.com/coco-data-format-for-object-detection-a4c5eaf518c5)) which can be checked in these cases. However, since we do not have a way of handling crowd references, try to avoid using this option.
 
 ## Hotkeys Cheatsheet
 TBD
