@@ -54,7 +54,8 @@ These are the guidelines for the annotation of olfactory references in historic 
 - To limit the number of labels to choose from, the categories are ordered in a two level hierarchy where most categories contain a number of subcategories to further specify the annotation.
 - A visualization of the hierarchy is available [here](labelsystem.jpg) 
 - Apart from the predefined subcategories, each category has a generic `other` free text field where missing subcategories can be entered. 
-- Furthermore, there is a specific `other` category that is meant to capture missing categories that the annotator thinks is important. It has a `type` free text field where the name of the missing category can be entered
+- Furthermore, there is a specific `other` category that is meant to capture missing categories that the annotator thinks is important. It has a `type` free text field where the name of the missing category can be entered.
+- Note that the annotation categories and their hierarchy do not match the way they are entered into the knowledge graph. There will be a separate mapping step before integrating the annotations there.
 - If there is something you are absolutely missing from a nose-first perspective or you think is superfluous, please let us know, either in the issues, or in the slack channel.
 
 ## Best Practices
