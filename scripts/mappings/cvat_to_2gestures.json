@@ -1,0 +1,15 @@
+{
+  "direct_mappings": {
+    "13": 1,
+    "14": 2
+  },
+  "type_mappings": {
+
+  },
+  "categories": [
+    {"id": 1, "name": "holding the nose"},
+    {"id": 2, "name": "sniffing"}
+  ]
+
+
+}

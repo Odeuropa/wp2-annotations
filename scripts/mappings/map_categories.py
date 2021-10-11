@@ -8,12 +8,12 @@ import os
 
 
 def map_annotations(target_coco, cvat_json, mapping_json):
-    direct_mappings = mapping_json.direct_mapping
-    type_mappings = mapping_json.type_mapping
+    direct_mappings = mapping_json['direct_mappings']
+    type_mappings = mapping_json['type_mappings']
 
     mapped_annotations = []
     for ann in cvat_json['annotations']:
-        cat_id = ann['category_id']
+        cat_id = str(ann['category_id'])
         if cat_id in direct_mappings.keys():
             ann['category_id'] = direct_mappings[cat_id]
             mapped_annotations.append(ann)
@@ -51,8 +51,11 @@ def main():
     mapped_coco = map_annotations(target_coco, source_coco, mapping_json)
 
     write_dir = os.path.dirname(args.labels)
-    with open(f'{write_dir}/instances_mapped.json', 'w') as f:
+    target_path = f'{write_dir}/instances_mapped.json'
+    with open(target_path, 'w') as f:
         json.dump(mapped_coco, f)
+
+    print(f'Mapped annotations written to: {target_path}.')
 
 
 if __name__ == "__main__":
