@@ -1,0 +1,24 @@
+{
+  "categories": [
+    { "id": 1, "name": "beverage"},
+    { "id": 2, "name": "bird"},
+    { "id": 3, "name": "fish"},
+    { "id": 4, "name": "flower"},
+    { "id": 5, "name": "fruit"},
+    { "id": 6, "name": "insect"},
+    { "id": 7, "name": "mammal"},
+    { "id": 8, "name": "vegetable"}
+  ],
+  "direct_mappings": {
+    "8": 1,
+    "31": 2,
+    "25": 3,
+    "32": 3,
+    "18": 4,
+    "23": 5,
+    "24": 6,
+    "30": 7,
+    "22": 8
+  },
+  "type_mappings": {}
+}
