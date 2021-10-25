@@ -7,7 +7,7 @@ import argparse
 import os
 
 
-def map_annotations(target_coco, cvat_json, mapping_json):
+def map_from_cvat(cvat_json, mapping_json):
     direct_mappings = mapping_json['direct_mappings']
     type_mappings = mapping_json['type_mappings']
 
@@ -29,26 +29,27 @@ def map_annotations(target_coco, cvat_json, mapping_json):
     mapped_json = {
         'images': used_imgs,
         'annotations': mapped_annotations,
-        'categories': target_coco['categories']
+        'categories': mapping_json['categories']
     }
 
     return mapped_json
+
+
+def map_from_oi(target_coco, oi_csv, mapping_json):
+    pass
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--mapping_file', '-m', help='path to mapping json file')
     parser.add_argument('--labels', '-l', help='path to cvat labels in coco format')
-    parser.add_argument('--target_labels', '-t', help='path to target labels in coco format')
     args = parser.parse_args()
-    with open(args.target_labels) as f:
-        target_coco = json.load(f)
     with open(args.labels) as f:
         source_coco = json.load(f)
     with open(args.mapping_file) as f:
         mapping_json = json.load(f)
 
-    mapped_coco = map_annotations(target_coco, source_coco, mapping_json)
+    mapped_coco = map_from_cvat(source_coco, mapping_json)
 
     write_dir = os.path.dirname(args.labels)
     target_path = f'{write_dir}/instances_mapped.json'

@@ -31,5 +31,123 @@
     "pig": 17,
     "horse": 8,
     "rabbit": 21
-  }
+  },
+    "categories": [
+        {
+            "id": 1,
+            "name": "Flower"
+        },
+        {
+            "id": 2,
+            "name": "Wine"
+        },
+        {
+            "id": 3,
+            "name": "Cheese"
+        },
+        {
+            "id": 4,
+            "name": "Dog"
+        },
+        {
+            "id": 5,
+            "name": "Fish"
+        },
+        {
+            "id": 6,
+            "name": "Goat"
+        },
+        {
+            "id": 7,
+            "name": "Sheep"
+        },
+        {
+            "id": 8,
+            "name": "Horse"
+        },
+        {
+            "id": 9,
+            "name": "Bird"
+        },
+        {
+            "id": 10,
+            "name": "Insect"
+        },
+        {
+            "id": 11,
+            "name": "Coffee"
+        },
+        {
+            "id": 12,
+            "name": "Tea"
+        },
+        {
+            "id": 13,
+            "name": "Strawberry"
+        },
+        {
+            "id": 14,
+            "name": "Bread"
+        },
+        {
+            "id": 15,
+            "name": "Pumpkin"
+        },
+        {
+            "id": 16,
+            "name": "Deer"
+        },
+        {
+            "id": 17,
+            "name": "Pig"
+        },
+        {
+            "id": 18,
+            "name": "Grape"
+        },
+        {
+            "id": 19,
+            "name": "Apple"
+        },
+        {
+            "id": 20,
+            "name": "Candle"
+        },
+        {
+            "id": 21,
+            "name": "Rabbit"
+        },
+        {
+            "id": 22,
+            "name": "Lemon"
+        },
+        {
+            "id": 23,
+            "name": "Lavender (Plant)"
+        },
+        {
+            "id": 24,
+            "name": "Whale"
+        },
+        {
+            "id": 25,
+            "name": "Pomegranate"
+        },
+        {
+            "id": 26,
+            "name": "Oyster"
+        },
+        {
+            "id": 27,
+            "name": "Peach"
+        },
+        {
+            "id": 28,
+            "name": "Lobster"
+        },
+        {
+            "id": 29,
+            "name": "Pear"
+        }
+    ]
 }
