@@ -5,9 +5,10 @@ Mapped annotations are written into labels file dir.
 import json
 import argparse
 import os
+import pandas as pd
 
 
-def map_annotations(cvat_json, mapping_json):
+def map_from_cvat(cvat_json, mapping_json):
     direct_mappings = mapping_json['direct_mappings']
     type_mappings = mapping_json['type_mappings']
 
@@ -45,7 +46,7 @@ def main():
     with open(args.mapping_file) as f:
         mapping_json = json.load(f)
 
-    mapped_coco = map_annotations(source_coco, mapping_json)
+    mapped_coco = map_from_cvat(source_coco, mapping_json)
 
     write_dir = os.path.dirname(args.labels)
     target_path = f'{write_dir}/instances_mapped.json'
