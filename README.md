@@ -6,3 +6,5 @@
 
 - [Annotation Guidelines](annotation-guidelines/annotation-guidelines.md)
 
+- snapshots of annotations and image metadata in coco json format (`snapshots` directory)
+
