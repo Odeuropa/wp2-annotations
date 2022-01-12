@@ -88,6 +88,6 @@ TBD
 ### Sniffing
 - Please include the face (i.e. eyes, ears, nose) and the hand holding the object in the bounding box
 
-### Smoking Equipment 
+
 
 
