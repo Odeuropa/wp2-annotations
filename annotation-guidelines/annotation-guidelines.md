@@ -88,6 +88,8 @@ TBD
 ### Sniffing
 - Please include the face (i.e. eyes, ears, nose) and the hand holding the object in the bounding box
 
+### Whale
+- In cases where a spout is visible, it is included in the bounding box
 
 
 
