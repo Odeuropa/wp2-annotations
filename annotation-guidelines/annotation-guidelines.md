@@ -94,3 +94,6 @@ TBD
 
 ### Gloves
 - When overlapping, pairs of gloves are annotated as one instance, otherwise separately
+
+### Pomander
+- Only the pomander, not the chain holding it, is annotated
