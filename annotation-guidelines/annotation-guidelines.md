@@ -92,4 +92,5 @@ TBD
 - In cases where a spout is visible, it is included in the bounding box
 - If only the fluke is visible, whereas the rest of the body is under the water, the fluke is annotated, too.
 
-
+### Gloves
+- When overlapping, pairs of gloves are annotated as one instance, otherwise separately
