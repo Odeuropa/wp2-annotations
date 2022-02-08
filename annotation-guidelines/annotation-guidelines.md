@@ -97,3 +97,6 @@ TBD
 
 ### Jewellery
 - Pomander: Only the pomander, not the chain holding it, is annotated
+
+### Candle
+- candlestand is included in the bounding box
