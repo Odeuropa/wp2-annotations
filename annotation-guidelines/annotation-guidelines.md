@@ -100,3 +100,6 @@ TBD
 
 ### Candle
 - candlestand is included in the bounding box
+
+### Censer
+- Chains holding the censer are included in bounding box
