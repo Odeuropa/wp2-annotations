@@ -102,4 +102,5 @@ TBD
 - candlestand is included in the bounding box
 
 ### Censer
-- Chains holding the censer are included in bounding box
+- Chains holding the censer are included in bounding box (if they are well visible)
+- If there is smoke coming out of the censer, please keep in mind to annotate the smoke as well
