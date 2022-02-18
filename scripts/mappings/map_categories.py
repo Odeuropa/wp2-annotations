@@ -39,7 +39,7 @@ def map_with_names(cvat_json, mapping_json):
 
     name_to_id_mapping = {cat['name'].lower(): cat['id'] for cat in mapping_json['categories']}
 
-    name_mappings = {name: name_to_id_mapping.lower() for name in names}
+    name_mappings = {name: name_to_id_mapping[name] for name in names}
 
     unused_names = [name for name in names if name not in name_mappings.keys()]
 
