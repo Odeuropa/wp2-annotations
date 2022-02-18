@@ -37,6 +37,12 @@ def map_annotations(cvat_json, mapping_json):
 def map_with_names(cvat_json, mapping_json):
     names = set([cat['name'] for cat in cvat_json['categories']])
 
+    name_to_id_mapping = {cat['name'].lower(): cat['id'] for cat in mapping_json['categories']}
+
+    name_mappings = {name: name_to_id_mapping.lower() for name in names}
+
+    unused_names = [name for name in names if name not in name_mappings.keys()]
+
     name_mappings = mapping_json['name_mappings']
     return None
 
