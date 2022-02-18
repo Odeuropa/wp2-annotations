@@ -34,6 +34,13 @@ def map_annotations(cvat_json, mapping_json):
 
     return mapped_json
 
+def map_with_names(cvat_json, mapping_json):
+    names = set([cat['name'] for cat in cvat_json['categories']])
+
+    name_mappings = mapping_json['name_mappings']
+    return None
+
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -45,7 +52,8 @@ def main():
     with open(args.mapping_file) as f:
         mapping_json = json.load(f)
 
-    mapped_coco = map_annotations(source_coco, mapping_json)
+    # mapped_coco = map_annotations(source_coco, mapping_json)
+    mapped_coco = map_with_names(source_coco, mapping_json)
 
     write_dir = os.path.dirname(args.labels)
     target_path = f'{write_dir}/instances_mapped.json'
