@@ -39,14 +39,17 @@ def map_with_names(cvat_json, mapping_json):
 
     name_to_id_mapping = {cat['name'].lower(): cat['id'] for cat in mapping_json['categories']}
 
-    try:
-        name_mappings = {name: name_to_id_mapping[name] for name in names}
-    except KeyError:
-        print('a')
+    unused_names = []
+    name_mappings = {}
+    for name in names:
+        try:
+            new_id = name_to_id_mapping[name]
+            name_mappings[name] = new_id
+        except KeyError:
+            unused_names.append(name)
 
-    unused_names = [name for name in names if name not in name_mappings.keys()]
+    print(unused_names)
 
-    name_mappings = mapping_json['name_mappings']
     return None
 
 
