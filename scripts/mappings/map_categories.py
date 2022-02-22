@@ -34,7 +34,7 @@ def map_annotations(cvat_json, mapping_json):
 
     return mapped_json
 
-def map_with_names(cvat_json, mapping_json):
+def helper(cvat_json, mapping_json):
     names = set([cat['name'] for cat in cvat_json['categories']])
 
     name_to_id_mapping = {cat['name'].lower(): cat['id'] for cat in mapping_json['categories']}
@@ -53,6 +53,33 @@ def map_with_names(cvat_json, mapping_json):
     return None
 
 
+def map_with_names(source_coco, mapping_json):
+    name_mappings = mapping_json['name_mappings']
+
+    cat_id_to_name = {cat['id']: cat['name'] for cat in source_coco['categories']}
+    mapped_annotations = []
+    skipped = []
+    for ann in source_coco['annotations']:
+        cat_name = cat_id_to_name[ann['category_id']]
+
+        try:
+            new_cat_id = name_mappings[cat_name]
+            ann['category_id'] = new_cat_id
+            mapped_annotations.append(ann)
+        except KeyError:
+            skipped.append(cat_name)
+
+
+    used_img_ids = {ann['image_id'] for ann in mapped_annotations}
+    used_imgs = [img for img in source_coco['images'] if img['id'] in used_img_ids]
+
+    mapped_json = {
+        'images': used_imgs,
+        'annotations': mapped_annotations,
+        'categories': mapping_json['categories']
+    }
+
+    return mapped_json
 
 def main():
     parser = argparse.ArgumentParser()
@@ -68,7 +95,8 @@ def main():
     mapped_coco = map_with_names(source_coco, mapping_json)
 
     write_dir = os.path.dirname(args.labels)
-    target_path = f'{write_dir}/instances_mapped.json'
+    # target_path = f'{write_dir}/instances_mapped.json'
+    target_path = f'{write_dir}/instances_mapped_icpr.json'
     with open(target_path, 'w') as f:
         json.dump(mapped_coco, f)
 

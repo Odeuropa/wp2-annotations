@@ -26,7 +26,7 @@
     "rose": 18,
     "censer": 704,
     "meat": 708,
-    "pear": 109,
+    "pear": 110,
     "nut": 709,
     "cat": 403,
     "carrot": 202,
@@ -49,10 +49,10 @@
     "sheep": 411,
     "pig": 410,
     "gloves": 707,
-    "strawberry": 109,
+    "strawberry": 112,
     "whale": 412,
     "iris": 9,
-    "plum": 109,
+    "plum": 111,
     "garlic": 203,
     "fish": 407,
     "cherry": 102,
@@ -67,7 +67,7 @@
     "gull": 402,
     "insect": 500,
     "beetle": 500,
-    "peacock": 55,
+    "peacock": 402,
     "seafood": 500,
     "oyster": 501,
     "clam": 501,
@@ -253,35 +253,35 @@
       "name": "Glass with stem"
     },
     {
-      "id": 301,
+      "id": 302,
       "name": "Glass without stem"
     },
     {
-      "id": 301,
+      "id": 303,
       "name": "Jug"
     },
     {
-      "id": 301,
+      "id": 304,
       "name": "Cup"
     },
     {
-      "id": 301,
+      "id": 305,
       "name": "Chalice"
     },
     {
-      "id": 301,
+      "id": 306,
       "name": "Wine Bottle"
     },
     {
-      "id": 301,
+      "id": 307,
       "name": "Carafe"
     },
     {
-      "id": 301,
+      "id": 308,
       "name": "Coffeepot"
     },
     {
-      "id": 301,
+      "id": 309,
       "name": "Teapot"
     },
     {
