@@ -79,6 +79,12 @@ TBD
 
 ## Specific Category Guidelines
 
+### Trees
+- The tree category exists for historical reasons only, do not bother to annotate trees
+
+### Birds
+- For now, we do not care about bird subtypes (we presume they smell alike), subtypes don't need to be specified
+
 ### Flower
 - We define one instance of a flower as a visible blossom. Closed buds, leafs, and stems are not considered to be part of the flower instance.
 
