@@ -82,6 +82,9 @@ TBD
 ### Trees
 - The tree category exists for historical reasons only, do not bother to annotate trees
 
+### Beverages
+- Beverages category is deprecated as well, please use "drinking vessel" where you can specify the contents if visible.
+
 ### Birds
 - For now, we do not care about bird subtypes (we presume they smell alike), subtypes don't need to be specified
 
