@@ -84,6 +84,7 @@ TBD
 
 ### Beverages
 - Beverages category is deprecated as well, please use "drinking vessel" where you can specify the contents if visible.
+- cups should be annotated without plates
 
 ### Birds
 - For now, we do not care about bird subtypes (we presume they smell alike), subtypes don't need to be specified
