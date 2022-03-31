@@ -1,8 +1,7 @@
 # wp2-annotations
-
+This repository contains resources and documents for the image annotatation campaign of the odeuropa project.
 
 ## Contents
-- scripts to visualize and process annotations (`scripts` directory)
 
 - [Annotation Guidelines](annotation-guidelines/annotation-guidelines.md)
 
