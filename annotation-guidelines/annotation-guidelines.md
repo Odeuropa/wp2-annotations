@@ -84,7 +84,7 @@ TBD
 
 ### Beverages
 - Beverages category is deprecated as well, please use "drinking vessel" where you can specify the contents if visible
-- if the liquid content not specifiable, use indefinable 
+- if the liquid content is not specifiable, use indefinable 
 - cups should be annotated without plates
 
 ### Birds
@@ -95,7 +95,8 @@ TBD
 
 ### Fruit
 - Grapes: One instance of an grapes-object is not a single berry, but the whole bunch of berries
-- Lemon: Lemon zests are included in the bounding box 
+- Lemon: Lemon (or in general citrus fruits) zests are included in the bounding box 
+- only the fruit itself should be in the bounding box 
 
 ### Sniffing
 - Please include the face (i.e. eyes, ears, nose) and the hand holding the object in the bounding box
@@ -113,6 +114,7 @@ TBD
 ### Candle
 - candlestand is included in the bounding box
 - the burn of the candle is included in the bounding box 
+- but make sure the fire on an candle is annotated as fire too
 
 ### Censer
 - Chains holding the censer are included in bounding box (if they are well visible)
@@ -121,4 +123,4 @@ TBD
 ### Smoking equipment 
 - often there are broken pipes on the ground 
 - tobacco is often packed in addition to boxes also in paper
-- matches are mostly annoted as crowded 
+- matches are mostly annotated as crowded 
