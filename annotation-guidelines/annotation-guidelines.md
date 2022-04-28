@@ -86,6 +86,9 @@ TBD
 - Beverages category is deprecated as well, please use "drinking vessel" where you can specify the contents if visible
 - if the liquid content is not specifiable, use indefinable 
 - cups should be annotated without plates
+- different kind of "jugs" or in the subcategorie included. Maybe a better specification would be more convenient, especially for the last kind of "jug" 
+
+![jug (1)](https://user-images.githubusercontent.com/91609811/165826544-61d33181-f834-44f6-b8b3-9b1348c06f46.png)![jug (2)](https://user-images.githubusercontent.com/91609811/165826565-63b89cc9-4cd2-4f34-9798-74d4f0b7c832.png)![jug (3)](https://user-images.githubusercontent.com/91609811/165826578-8a362e33-3f7c-4f23-99b2-e82211b1ee18.png)![jug (4)](https://user-images.githubusercontent.com/91609811/165826594-d805c122-581b-4d36-b04c-1bb3789bb76e.png)![jug (5)](https://user-images.githubusercontent.com/91609811/165826603-33610448-f300-4997-9e95-d3d19ca72b2c.png)
 
 ### Birds
 - For now, we do not care about bird subtypes (we presume they smell alike), subtypes don't need to be specified
@@ -116,11 +119,20 @@ TBD
 - the burn of the candle is included in the bounding box 
 - but make sure the fire on an candle is annotated as fire too
 
+![candle and fire](https://user-images.githubusercontent.com/91609811/165826041-b25248cc-1ce9-48f3-a191-fb99879dbbdb.png)
+
 ### Censer
 - Chains holding the censer are included in bounding box (if they are well visible)
 - If there is smoke coming out of the censer, please keep in mind to annotate the smoke as well
 
 ### Smoking equipment 
+
 - often there are broken pipes on the ground 
+
+![broken pipe](https://user-images.githubusercontent.com/91609811/165825815-d5c0fce5-e807-4b6e-b87a-aafc35914f12.png)
 - tobacco is often packed in addition to boxes also in paper
+
+![tobacco box](https://user-images.githubusercontent.com/91609811/165825878-d0dfc1fb-1f8b-4386-aa9d-a949a187b7f9.png)  ![tabacco paper](https://user-images.githubusercontent.com/91609811/165825911-05476747-3533-4e35-a04d-874ff8492508.png)
 - matches are mostly annotated as crowded 
+
+![matches](https://user-images.githubusercontent.com/91609811/165825959-0ef59ebd-4356-4af8-a725-ecdffc6e0a30.png)
