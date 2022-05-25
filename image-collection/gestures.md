@@ -1,5 +1,7 @@
 # Documentation of data collection for smell gestures
 
+Starting point to find possible collections: https://docs.google.com/spreadsheets/d/1WPS-KJptUJ-o8SXtg00llcxq0IKJu8eO6Ege_GrLaNc/edit#gid=1216556120
+
 ## Collected Data
 1. olfactory gestures dataset: c. 500 bounding boxes of smell gestures from the set of all annotations (mainly gathered using the "lazarus" and "smell" keywords)
 
