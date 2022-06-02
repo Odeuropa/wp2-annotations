@@ -7,6 +7,8 @@ Starting points to find possible collections:
 ## Collected Data
 1. olfactory gestures dataset: c. 500 bounding boxes of smell gestures from the set of all annotations (mainly gathered using the "lazarus" and "smell" keywords)
 
+Save in [drive](https://drive.google.com/drive/folders/1bfMgYQboYHPOb6FsJZ4-ELyZoywQHSfP?usp=sharing)
+
 ## Other Sources 
 | Collection/Source | Gesture | Keyword | # results | Comment |
 | --- | --- | --- | --- | --- | 
