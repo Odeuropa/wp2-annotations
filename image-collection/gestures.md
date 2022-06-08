@@ -14,7 +14,7 @@ Save in [drive](https://drive.google.com/drive/folders/1bfMgYQboYHPOb6FsJZ4-ELyZ
 | --- | --- | --- | --- | --- | --- |
 | Inger's Smelly Images Folder (gdrive) | Sniffing | - | 89 | manually collected by Inger | 
 | Inger's Smelly Images Folder (gdrive) | Pinching nose | - | 54 | manually collected by Inger, some overlap with existing training data | 
-| [Iconclass](https://iconclass.org) | Sniffing, Pinching nose | 31A2535 (hands towards the nose) | 8 | | 
+| [Iconclass](https://iconclass.org) | Sniffing, Pinching nose | 31A2535 (hands towards the nose) | 8 | | 0 |
 | [Iconclass](https://iconclass.org) | Sniffing | 31A31 smell, smelling (one if the five senses)| | | 
 | [Iconclass](https://iconclass.org) | Sniffing | 31AA331 agreeable smell | | |
 | [Iconclass](https://iconclass.org) | Pinching nose | 31AA332 disgreeable, repellent smell | | |
