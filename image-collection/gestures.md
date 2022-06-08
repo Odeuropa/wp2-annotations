@@ -10,8 +10,8 @@ Starting points to find possible collections:
 Save in [drive](https://drive.google.com/drive/folders/1bfMgYQboYHPOb6FsJZ4-ELyZoywQHSfP?usp=sharing)
 
 ## Other Sources 
-| Collection/Source | Gesture | Keyword | # results | Comment |
-| --- | --- | --- | --- | --- | 
+| Collection/Source | Gesture | Keyword | # results | Comment | Reference |
+| --- | --- | --- | --- | --- | --- |
 | Inger's Smelly Images Folder (gdrive) | Sniffing | - | 89 | manually collected by Inger | 
 | Inger's Smelly Images Folder (gdrive) | Pinching nose | - | 54 | manually collected by Inger, some overlap with existing training data | 
 | [Iconclass](https://iconclass.org) | Sniffing, Pinching nose | 31A2535 (hands towards the nose) | 8 | | 
